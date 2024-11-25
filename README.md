@@ -129,18 +129,23 @@
 
 
 ## How to Update the Firmware
-  - Install Artemis firmware tool
-    - https://github.com/tgruetzm/Owl-Sense/raw/main/ArtemisUploader.exe
-  - Download the latest firmware 
-    - https://github.com/tgruetzm/Owl-Sense/tree/main/firmware/v1.1
-  - Physical connections
-    - https://www.digikey.com/en/products/detail/ftdi-future-technology-devices-international-ltd/TTL-232R-3V3/1836393
-    - Connect the cable to the board with the black wire to GND and the green wire to DTR.
+
+  ### V1.1.13 or Newer
+  - Download the latest firmware from: [Owl Sense Releases](https://github.com/Owl-Sense/OwlSenseV1.1/releases)
+  - Copy the OwlSenseFirmware.1.1.x.bin file to a memory card.
+  - Insert the card in Owl Sense, it will find the firmware file and install it.
+  - During the installation, you will see the standby LED solid and the record/wireless LEDs blink.  Once they stop, the install is complete.  Total time is about 15 seconds.
+
+  ### V1.1.12 or Older
+  - Install Artemis firmware tool: [Artemis Tool](https://github.com/Owl-Sense/OwlSenseV1.1/tree/main/FirmwareReleases/Tools)
+  - Download the latest firmware: [Owl Sense Releases](https://github.com/Owl-Sense/OwlSenseV1.1/releases)
+  - Physical connections: [FTDI Cable](https://www.digikey.com/en/products/detail/ftdi-future-technology-devices-international-ltd/TTL-232R-3V3/1836393)
   - Using the Artemis Uploader
-    - Select the latest firmware bin file
-    - Select the correct Com Port(Should be USB Serial)
-    - Press Upload Firmware(The update should take about 10 seconds)
-    * A future firmware version hopefully will allow for updates from a firmware file on the memory card or possibly wirelessly.
+    - Connect the USB cable to your computer and the other end to the pins on Owl Sense - Black to GND and Green to DTR
+    - Launch the Artemis Uploader
+    - Select the latest firmware file OwlSenseFirmware.1.1.x.bin
+    - Select the COM port, it will say USB Serial Port
+    - Press Upload Bootloader and Firmware.  This step is critical, if you only install the firmware, they you won't be able to use the easier card based firmware update method.
 
 
 
