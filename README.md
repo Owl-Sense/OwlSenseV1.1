@@ -48,7 +48,7 @@
     * Lithium batteries should always be stored individually and in a case or box that separates cells.
 
   - **Memory Card**
-    * At this time only Samsung EVO Plus 64GB or 128GB cards are supported.  Others will work, but there is no guarantee of compatability.  Other cards may significantly reduce runtimes or cause other undesirable issues.
+    * At this time only Samsung EVO Plus 64GB/128GB or SanDisk Extreme 64GB/128GB cards are officially supported.  Others will work, but there is no guarantee of compatability.  Other cards may significantly reduce runtimes or cause other undesirable issues.
   - **Microphone**
     * Featuring Infineon's [IM73D122](https://www.infineon.com/cms/en/product/sensor/mems-microphones/mems-microphones-for-consumer/im73d122/) microphone
     * Ultra-low self-noise/ultra-high SNR 73dB(A)
@@ -56,7 +56,7 @@
     * The Microphone element is protected externally by an waterproof acoustic PTFE membrane.  This keeps water outside of the microphone port and decreases downtime in wet conditions.
 
 
-## iOS App Overview
+## iOS/Android App Overview
   - **Main Page**
     * Recorder List - shows an item for each recorder in range that has the wireless radio on.
     * Settings - allows configuration of default values, these can be easily loaded to any recorder or are automatically loaded if no configuration file is found.
@@ -90,7 +90,7 @@
         2. WavPack Lossless(LL) - A lossless compression codec that is capable of losslessly compressing audio to about 60% of normal.  No data or audio quality is lost, but runtimes increase by 15%-20%.
         3. WavPack Lossy(LY) - A lossy compression codec that is capable of lossy compressing audio to about 30% of normal.  Data is encode with a bitrate of 5 bits/sample. See the "-b" flag for more details here: [WavPack Documentation](https://www.wavpack.com/wavpack_doc.html). There may be a small loss in audio quality, but runtimes increase by 30%-40%.
     * **Microphone Configuration**
-      * Sample Rate - determines the maximum frequency of the audio, how much data is used as well as how long the recorder will run.  Continuous runtimes in hours can be calculated as battery capacity in mAh/current.  The rated capacities are always best case at room temperature with a new cell.  If you want accurate runtimes, you may need to derate the capacity to account for cell age and temperature.  This could be anywhere from 0-25%.  Data usage and runtimes below assume continuous recordings with recommended memory cards and a 3500mAh battery at room temerature.  Other cards will likely result in reduced run times.  This is best case, which will often not be seen.  Standy/Off power consumption is negligible(0.3mA).
+      * Sample Rate - determines the maximum frequency of the audio, how much data is used as well as how long the recorder will run.  Continuous runtimes in hours can be calculated as battery capacity in mAh/current.  The rated capacities are always best case at room temperature with a new cell.  If you want accurate runtimes, you may need to derate the capacity to account for cell age and temperature.  This could be anywhere from 0-25%.  Data usage and runtimes below assume continuous recordings with recommended memory cards and a 3500mAh battery at room temerature.  Other cards will likely result in reduced run times.  This is best case, which will often not be seen.  Standy/Off power consumption is negligible(0.4mA).
           | Sample Rate | WAV mA | WAV Hours | WavPack LL mA | WavPack LL Hours | WavPack LY Current | WavPack LY Hours | Storage/24hrs for WAV |  
           |-------------|--------|-----------|---------------|------------------|--------------------|------------------|-----------------------|  
           | 8k          | 3.3mA  | 1060h     | 2.8mA         | 1250h            | 2.6mA              | 1346h            | 1.3GB                 |  
