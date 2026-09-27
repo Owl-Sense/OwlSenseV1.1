@@ -10,10 +10,10 @@
   * For ordering information see: https://www.owlsenserecorders.com
 
 ## Quick Start Guide
-  1. Download the iOS Owl Sense app.
+  1. Download the iOS or Android Owl Sense app.
   1. Install a protected 18650 battery and memory card.
   2. The yellow Error LED will flash indicating the clock is not set.
-  3. Hold the Wireless button until the blue LED illuminates, to turn on the radio.
+  3. Hold the Setup/Wireless button until the blue LED illuminates, to turn on the radio.
   4. Load the Owl Sense app on your phone.
   5. Connect to and configure the device, set a Continuous schedule and toggle the recorder On.
   6. Press Update and disconnect from the recorder.
@@ -32,13 +32,13 @@
 ## Hardware Overview
   - **Buttons**
     * On/Off - turns the recorder on or off.  Hold the button until the record LED lights up, then release.
-    * Wireless - turns on the wireless radio.  Hold until the blue wireless LED lights up, then release.  Wireless can only be turned on to configure devices when off or on standby.  Configuration can not be done during an active recording.
+    * Setup/Wireless - enables setup mode to connect to Owl Sense from the app.  Hold until the blue setup LED lights up, then release. Configuration can not be done during an active recording.
     * Reset - a single press will reset the board.  Do not reset when a recording is in progress.  This may corrupt the memory card.  The green standy LED will illuminate after the system loads.
   - **LED indicators**
     * No LED -  if no LED is illuminated the recorder is off.  No recordings will take place.
     * Record - red LED, indicates that a recording is in progress.  The LED blinks everytime a file write occurs.  At a 48k sample rate it's one write/blink per second, at 12k it's one write/blink per 4 seconds, etc...
     * Standy - green LED, indicates that the recorder is on and is waiting for an active schedule.
-    * Wireless - blue LED, solid indicates the wireless radio is powered.  Blinking indicates an active connection.
+    * Setup/Wireless - blue LED, solid indicates the wireless radio is powered.  Blinking indicates an active connection.
     * Error - yellow LED, blinking indicates an error.  Recordings will not happen if there is an error condition.  To see the exact error, use the Owl Sense app.
   - **Battery**
     * Only use protected 18650 cells from reputable manufacturers.  Cell length must be ~70mm.
@@ -48,7 +48,7 @@
     * Lithium batteries should always be stored individually and in a case or box that separates cells.
 
   - **Memory Card**
-    * At this time only Samsung EVO Plus 64GB/128GB or SanDisk Extreme 64GB/128GB cards are officially supported.  Others will work, but there is no guarantee of compatability.  Other cards may significantly reduce runtimes or cause other undesirable issues.
+    * [Recommended cards](https://www.owlsenserecorders.com/support)
   - **Microphone**
     * Featuring Infineon's [IM73D122](https://www.infineon.com/cms/en/product/sensor/mems-microphones/mems-microphones-for-consumer/im73d122/) microphone
     * Ultra-low self-noise/ultra-high SNR 73dB(A)
@@ -134,7 +134,7 @@
   - Download the latest firmware from: [Owl Sense Releases](https://github.com/Owl-Sense/OwlSenseV1.1/releases)
   - Copy the OwlSenseFirmware.1.1.x.bin file to a memory card.
   - Insert the card in Owl Sense, it will find the firmware file and install it.
-  - During the installation, you will see the standby LED solid and the record/wireless LEDs blink.  Once they stop, the install is complete.  Total time is about 15 seconds.
+  - During the installation, you will see the standby LED solid and the record/setup LEDs blink.  Once they stop, the install is complete.  Total time is about 15 seconds.
 
   ### V1.1.12 or Older
   - Install Artemis firmware tool: [Artemis Tool](https://github.com/Owl-Sense/OwlSenseV1.1/tree/main/FirmwareReleases/Tools)
